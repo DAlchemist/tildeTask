@@ -1,0 +1,197 @@
+@import "compass/reset";
+@import "compass";
+
+@import "_bootstrap";
+
+@import "font-awesome/font-awesome";
+
+
+@font-face {
+	font-family: serifaBT;
+	src: url('../fonts/serifaBT-light.ttf');
+}
+@font-face {
+	font-family: futuraBT;
+	src: url('../fonts/futuraBT-bold.ttf');
+}
+
+$tilde-blue-color-1:#121b21;
+
+$tilde-grey-color-1:#c4cbcf;
+
+$tilde-base-line-height:$baseLineHeight;
+$tilde-base-font-size:$baseFontSize;
+
+body{
+	font-family: 'Open Sans';
+}
+.container{
+	margin:auto;
+	width:100%;
+	max-width:960px;
+
+	@media screen and ( max-width : 100px ) {
+		max-width: auto;
+	}
+}
+
+////////////////////////////////////////////////////////////////////
+//*****Navigation*****************
+
+.nav-back{
+	background-color:#121b21;
+}
+
+.head-nav{
+	
+	background-color:$tilde-blue-color-1;
+	
+	.nav-list{
+		
+		margin:auto;
+		width:$tilde-base-line-height*25;
+
+		li {
+			display: inline-block;
+			height:$tilde-base-line-height*2.7;
+			margin-left:$tilde-base-line-height*1.5;
+		}
+
+		a {
+			color:$tilde-grey-color-1;
+			display:inline-block;
+			margin-top: $tilde-base-line-height/1.2;
+			text-transform: uppercase;
+			font-size: $tilde-base-font-size/1.13;
+			font-family:'futuraBT' Georgia, serif;
+			
+			&:hover{
+				text-decoration: none;
+				color:white;
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////////
+//*****Introduction*****************
+
+.intro-back{
+	background-color:#00afc4;
+	height:750px;
+	padding-top:60px;
+}
+
+.intro{
+	text-align:center;
+	
+
+	h1{
+		font-family:'futuraBT' Georgia, serif;
+		color:white;
+		text-transform: uppercase;
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.title{
+		color:#0a343c;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-family:'futuraBT' Georgia, serif;
+		background:url('../img/dot.gif') center repeat-x;
+		margin-bottom: 50px;
+		
+		span {
+			background-color:#00afc4;
+			padding:0px 44px 0px 44px;
+		}
+	}
+	.content{
+		
+		font-family:'serifaBT' Georgia, serif;
+		color:white;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 31px;
+		margin-bottom: 30px;
+
+		span{
+			display: block;
+		}
+	}
+	.call-to-action{
+		width: 100%;
+		height: 60px;
+		background:url('../img/dot.gif') center repeat-x;
+
+		div{
+			background-color:#00afc4;
+			width: 250px;
+			margin:auto;
+			
+			a{
+				color:black;
+				text-transform:uppercase;
+				font-family: 'futuraBT', Georgia, serif;
+				font-size: 15px;
+				display:inline-block;
+				line-height: 62px;
+				width: 184px;
+				background:url(../img/yellow-arrow.png) no-repeat;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}
+
+		}
+	}
+
+	img {
+		display: block;
+		margin:auto;
+	}
+	
+	.border-up{
+		width: 100%;
+		height: 7px;
+		background-color:blue;
+	}
+	.references{
+		width: 100%;
+		height: 150px;
+		background-color:#edf3f3;
+		margin:auto;
+		padding-top: 30px;
+		
+		.text{
+
+			border:1px solid black;
+			width: 50%;
+			margin:auto;	
+			display:block;
+
+
+			h6{
+				font-family: 'futuraBT', Georgia, serif;
+				color:#535b60;
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+
+			ul{
+				width: 400px;
+				height: 30px;
+				border:1px solid black;
+				
+				
+
+				li{
+					display: inline-block;
+					float:left;
+				}
+			}
+		}
+	}
+}
