@@ -78,7 +78,7 @@ body{
 
 .intro-back{
 	background-color:#00afc4;
-	height:750px;
+	height:565px;
 	padding-top:60px;
 }
 
@@ -154,45 +154,56 @@ body{
 		margin:auto;
 	}
 
-	.border-up{
-		width: 100%;
-		height: 7px;
-		background-color:blue;
-	}
-	.references{
-		width: 100%;
-		height: 150px;
-		background-color:#edf3f3;
-		margin:auto;
-		padding-top: 30px;
+}
+
+.border-up{
+	width: 100%;
+	height: 7px;
+	background:url("../img/triangle.png") top repeat-x;
+	position:relative;
+	top:-20px;
+}
+.references{
+	
+	width: 100%;
+	height: 100px;
+	background-color:#edf3f3;
+	margin:auto;
+	padding-top: 30px;
+	position:relative;
+	top:-20px;
+	text-align:center;
+
+	.text{
 		
-		.text{
+		width: 50%;
+		margin:auto;	
+		display:block;
+		margin-top: 10px;
 
-			border:1px solid black;
-			width: 50%;
-			margin:auto;	
-			display:block;
+		h6{
+			font-family: 'futuraBT', Georgia, serif;
+			color:#535b60;
+			text-transform: uppercase;
+			font-size: 14px;
+		}
 
-
-			h6{
-				font-family: 'futuraBT', Georgia, serif;
-				color:#535b60;
-				text-transform: uppercase;
-				font-size: 14px;
-			}
-
-			ul{
-				width: 400px;
-				height: 30px;
-				border:1px solid black;
-				
-				
-
-				li{
-					display: inline-block;
-					float:left;
-				}
+		ul{
+			width: 500px;
+			height: 30px;
+			
+			li{
+				display: inline-block;
+				float:left;
+				margin:10px;
 			}
 		}
 	}
+}
+.border-bottom{
+	width: 100%;
+	height: 20px;
+	background:url("../img/lattice.gif") top repeat-x;
+	position:relative;
+	top:-20px;
 }

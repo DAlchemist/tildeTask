@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined variable: "$icon-font-path".
-        on line 13 of /home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/_glyphicons.scss
-        from line 30 of /home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/bootstrap.scss
+        on line 13 of /home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/_glyphicons.scss
+        from line 30 of /home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/bootstrap.scss
 
 Backtrace:
-/home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/_glyphicons.scss:13
-/home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/bootstrap.scss:30
+/home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/_glyphicons.scss:13
+/home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/bootstrap.scss:30
 /home/dalchemist/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/variable.rb:49:in `_perform'
 /home/dalchemist/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/node.rb:40:in `perform'
 /home/dalchemist/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/string_interpolation.rb:82:in `_perform'
@@ -89,4 +89,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$icon-font-path\".\A         on line 13 of /home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/_glyphicons.scss\A         from line 30 of /home/dalchemist/Desktop/projekti/thePaintDrop/sass/bootstrap/bootstrap.scss"; }
+  content: "Syntax error: Undefined variable: \"$icon-font-path\".\A         on line 13 of /home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/_glyphicons.scss\A         from line 30 of /home/dalchemist/Desktop/projekti/tilde/sass/bootstrap/bootstrap.scss"; }
