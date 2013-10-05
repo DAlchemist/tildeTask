@@ -8703,7 +8703,7 @@ body {
 /* line 143, ../sass/screen.scss */
 .intro .call-to-action div a:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 /* line 152, ../sass/screen.scss */
 .intro img {
