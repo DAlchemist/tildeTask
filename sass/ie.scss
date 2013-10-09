@@ -3,3 +3,12 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+
+#ieError {
+	text-align:center;
+	margin-top:150px;
+	& > div{
+		*display:inline;
+		zoom:1;
+	}
+}

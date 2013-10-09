@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="lib/modernizr.js"></script>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+	</head>
+	<body>
+	
+
+	<div class="nav-back">
+		<div class="container">
+			<div class="row-fluid">
+				
+				<div class="menu">
+					<a href="#">Menu</a>
+				</div>
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<nav class="head-nav">
+					<ul class="nav-list">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Training</a></li>
+						<li><a href="#">Consulting</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/Placeholders.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		
+    		$('.nav-list li').addClass('contracted');
+			
+			$(window).resize(function() {
+				if( $(window).width()>760 ){
+					$('.head-nav').removeClass('expanded');
+					$('.nav-list li').addClass('contracted');
+				}
+			});
+			
+			$('.menu').click(function(){
+    			$('.nav-list li').toggleClass('contracted');
+				$('.nav-list li, .head-nav').toggleClass('expanded');
+			})
+    	})
+    </script>
+	</body>
+</html>

@@ -2,8 +2,11 @@
 @import "compass";
 
 @import "_bootstrap";
-
 @import "font-awesome/font-awesome";
+
+@import "_variables";
+
+@import "_main";
 
 
 @font-face {
@@ -15,17 +18,16 @@
 	src: url('../fonts/futuraBT-bold.ttf');
 }
 
-$tilde-blue-color-1:#121b21;
 
-$tilde-grey-color-1:#c4cbcf;
-
-$tilde-base-line-height:$baseLineHeight;
-$tilde-base-font-size:$baseFontSize;
-
+html{
+	font-size:100%;
+}
 body{
 	font-family: 'Open Sans';
 }
+
 .container{
+	
 	margin:auto;
 	width:100%;
 	max-width:960px;
@@ -39,105 +41,215 @@ body{
 //*****Navigation*****************
 
 .nav-back{
-	background-color:#121b21;
+	background-color:$tilde-blue-color-1;
+	text-align:center;
+	height:65px;
+}
+.menu{
+	
+	float:right;
+	color:$tilde-grey-color-1;
+	display:inline-block;
+	text-transform: uppercase;
+	background-color:$tilde-blue-color-3;
+	height:$tilde-base-line-height*2.7;
+	width:$tilde-base-line-height*4.16;
+	text-align:center;
+	
+	a{
+		display: inline-block;
+		margin: $tilde-base-line-height/1.2;
+		font-size: $tilde-base-font-size/1.13;
+		font-family:'futuraBT' Georgia, serif;
+		color:white;
+
+		&:hover{
+			color:white;
+			text-decoration: none;
+		}
+	}
+
+	@media screen and ( min-width: 760px ) { 
+		display:none; 
+	}
 }
 
 .head-nav{
 	
 	background-color:$tilde-blue-color-1;
+	height:0px;
+	display:inline-block;
 	
 	.nav-list{
 		
 		margin:auto;
-		width:$tilde-base-line-height*25;
-
+		margin-top: $tilde-base-line-height*2.7;
+		background-color: $tilde-blue-color-3;
+		
 		li {
-			display: inline-block;
-			height:$tilde-base-line-height*2.7;
-			margin-left:$tilde-base-line-height*1.5;
+			background-color:$tilde-blue-color-3;
+			width: 100%;
+			text-align: center;
+			height: $tilde-base-line-height*2.08;
+			
+			a {
+				color:$tilde-grey-color-1;
+				display:inline-block;
+				margin-top:$tilde-base-line-height/1.02;
+				text-transform: uppercase;
+				font-size: $tilde-base-font-size/1.13;
+				font-family:'futuraBT' Georgia, serif;
+
+				@media screen and ( max-width: 760px ) { 
+					margin-top: $tilde-base-line-height/1.6;
+				}
+				
+				&:hover{
+					text-decoration: none;
+					color:white;
+				}
+			}
+
+			@media screen and ( min-width: 760px ) { 
+				display: inline-block;
+				background-color:$tilde-blue-color-1;
+				width: $tilde-base-line-height*4.16;
+				margin-right:$tilde-base-line-height/1.2;
+			}
+
+			
 		}
 
-		a {
-			color:$tilde-grey-color-1;
-			display:inline-block;
-			margin-top: $tilde-base-line-height/1.2;
-			text-transform: uppercase;
-			font-size: $tilde-base-font-size/1.13;
-			font-family:'futuraBT' Georgia, serif;
-			
-			&:hover{
-				text-decoration: none;
-				color:white;
-			}
+		@media screen and ( min-width: 760px ) { 
+			margin-top: 0px;
+			background-color:$tilde-blue-color-1;
+			width: $tilde-base-line-height*20.83;
+			margin: auto;
 		}
+
 	}
+
+
+	@media screen and ( min-width: 760px ) { 
+		height:$tilde-base-line-height*2.7;
+	}
+	
+}
+
+.logo{
+	display:inline-block;
+	@media screen and ( max-width: 760px ) { 
+		float:left;
+		margin: $tilde-base-line-height/1.6;
+	}
+}
+
+.expanded{
+	display:block;
+	border-bottom:1px solid #232729;
+}
+.contracted{
+	display: none;
+}
+.push{
+	margin-top:$tilde-base-line-height*8.45;
 }
 
 ////////////////////////////////////////////////////////////////////
 //*****Introduction*****************
 
 .intro-back{
-	background-color:#00afc4;
-	height:565px;
-	padding-top:60px;
+	background-color:$tilde-blue-color-4;
+	padding:$tilde-base-line-height*2.5 $tilde-base-line-height/1.2 0px $tilde-base-line-height/1.2;
+	
+	@media screen and ( max-width: 760px ) { 
+		padding:$tilde-base-line-height $tilde-base-line-height/1.2 0px $tilde-base-line-height/1.2;
+	}
 }
 
 .intro{
 	text-align:center;
 	
-
 	h1{
 		font-family:'futuraBT' Georgia, serif;
 		color:white;
 		text-transform: uppercase;
-		font-size: 55px;
-		line-height: 60px;
+		font-size: $tilde-base-line-height*2.29;
+		line-height: $tilde-base-line-height*2.5;
+		
+		
+		@media screen and ( max-width: 1000px ) { 
+			font-size: $tilde-base-line-height*1.87;
+			line-height: $tilde-base-line-height*1.87;
+		}
+		@media screen and ( max-width: 760px ) { 
+			font-size: $tilde-base-line-height*1.29;
+			line-height: $tilde-base-line-height*1.41;
+		}
 	}
+
 	.title{
-		color:#0a343c;
-		font-size: 20px;
+		color:$tilde-blue-color-5;
+		font-size: $tilde-base-line-height/1.2;
 		text-transform: uppercase;
 		font-weight: 900;
 		font-family:'futuraBT' Georgia, serif;
 		background:url('../img/dot.gif') center repeat-x;
-		margin-bottom: 50px;
+		margin-bottom: $tilde-base-line-height*2.08;
+		
+		@media screen and ( max-width: 760px ) { 
+			font-size: $tilde-base-line-height/1.71;
+			margin-bottom: $tilde-base-line-height/1.6;
+		}
 		
 		span {
-			background-color:#00afc4;
-			padding:0px 44px 0px 44px;
+			background-color:$tilde-blue-color-4;
+			padding:0px $tilde-base-line-height*1.83 0px $tilde-base-line-height*1.83;
+
+			@media screen and ( max-width: 760px ) { 
+				padding:0px $tilde-base-line-height 0px $tilde-base-line-height;
+			}
 		}
 	}
 	.content{
 		
 		font-family:'serifaBT' Georgia, serif;
 		color:white;
-		font-size: 24px;
+		font-size: $tilde-base-line-height;
 		font-weight: 300;
-		line-height: 31px;
-		margin-bottom: 30px;
-
+		line-height: $tilde-base-line-height*1.29;
+		margin-bottom: $tilde-base-line-height*1.29;
+		display: inline-block;
+		
+		@media screen and ( max-width: 1000px ) { 
+			font-size: $tilde-base-line-height/1.26;
+			line-height: $tilde-base-line-height*1.08;
+		}
+		
 		span{
-			display: block;
+			@media screen and ( min-width: 760px ) { 
+				display: block;
+			}
 		}
 	}
 	.call-to-action{
 		width: 100%;
-		height: 60px;
+		height: $tilde-base-line-height*2.5;
 		background:url('../img/dot.gif') center repeat-x;
 
 		div{
-			background-color:#00afc4;
-			width: 250px;
+			background-color:$tilde-blue-color-4;
+			width: $tilde-base-line-height*10.41;
 			margin:auto;
 			
 			a{
 				color:black;
 				text-transform:uppercase;
 				font-family: 'futuraBT', Georgia, serif;
-				font-size: 15px;
+				font-size: $tilde-base-line-height/1.6;
 				display:inline-block;
-				line-height: 62px;
-				width: 184px;
+				line-height: $tilde-base-line-height*2.58;
+				width: $tilde-base-line-height*7.66;
 				background:url(../img/yellow-arrow.png) no-repeat;
 
 				&:hover{
@@ -149,61 +261,23 @@ body{
 	}
 
 
-	img {
-		display: block;
-		margin:auto;
-	}
-
-}
-
-.border-up{
-	width: 100%;
-	height: 7px;
-	background:url("../img/triangle.png") top repeat-x;
-	position:relative;
-	top:-20px;
-}
-.references{
-	
-	width: 100%;
-	height: 100px;
-	background-color:#edf3f3;
-	margin:auto;
-	padding-top: 30px;
-	position:relative;
-	top:-20px;
-	text-align:center;
-
-	.text{
+	.hero-team{
 		
-		width: 50%;
-		margin:auto;	
-		display:block;
-		margin-top: 10px;
+		margin: auto;
+		
+		img {
+			display: block;
+			margin:auto;
+			width: $tilde-base-line-height*23.45;
+			height: $tilde-base-line-height*9.95;
 
-		h6{
-			font-family: 'futuraBT', Georgia, serif;
-			color:#535b60;
-			text-transform: uppercase;
-			font-size: 14px;
-		}
-
-		ul{
-			width: 500px;
-			height: 30px;
-			
-			li{
-				display: inline-block;
-				float:left;
-				margin:10px;
+			@media screen and ( max-width: 615px ) { 
+				width: 100%;
+				height: auto;
 			}
 		}
+	
 	}
+
 }
-.border-bottom{
-	width: 100%;
-	height: 20px;
-	background:url("../img/lattice.gif") top repeat-x;
-	position:relative;
-	top:-20px;
-}
+

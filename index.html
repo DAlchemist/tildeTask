@@ -3,19 +3,32 @@
 	<head>
 		<script type="text/javascript" src="lib/modernizr.js"></script>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+		<title>Tilde</title>
+		 <!--[if IE]>
+	        <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	    <![endif]-->
 	</head>
 	<body>
-		
+	
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+	<!-- NAVIGATION                                  -->
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
 
 	<div class="nav-back">
 		<div class="container">
 			<div class="row-fluid">
 				
+				<div class="menu">
+					<a href="#">Menu</a>
+				</div>
+				<div class="logo">
+					<img src="img/logo.png" alt="logo">
+				</div>
 				<nav class="head-nav">
 					<ul class="nav-list">
-						<li><a href="#"><img src="img/logo.png"></a></li>
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Training</a></li>
 						<li><a href="#">Consulting</a></li>
@@ -26,6 +39,10 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+	<!-- INTRODUCTION                                -->
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
 
 	<div class="intro-back">
 		<div class="container">
@@ -46,7 +63,9 @@
 							<a href="#">Meet the Team</a>
 						</div>
 					</div>
-					<img src="img/team.png">
+					<div class="hero-team">
+						<img src="img/team.png" alt="company team">
+					</div>
 				</section>
 			
 			</div>
@@ -61,11 +80,11 @@
 					<div class="text">
 						<h6>You may recognize us from around town</h6>
 						<ul>
-							<li><a href="#"><img src="img/rails.png"></a></li>
-							<li><a href="#"><img src="img/jquery.png"></a></li>
-							<li><a href="#"><img src="img/ember.png"></a></li>
-							<li><a href="#"><img src="img/handlebars.png"></a></li>
-							<li><a href="#"><img src="img/bundler.png"></a></li>
+							<li><a href="#"><img src="img/rails.png" alt="ruby on rails"></a></li>
+							<li><a href="#"><img src="img/jquery.png" alt="jquery"></a></li>
+							<li><a href="#"><img src="img/ember.png" alt="emberJS"></a></li>
+							<li><a href="#"><img src="img/handlebars.png" alt="handlebars"></a></li>
+							<li><a href="#"><img src="img/bundler.png" alt="bundler"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -74,5 +93,59 @@
 		<div class="border-bottom"></div>
 	</div>
 
-	</body>
+
+
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+	<!-- ACTIVITIES                                  -->
+	<!-- HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH -->
+
+	<section class="activities">
+		<div class="container">
+			<div class="row-fluid">
+				
+					<h2 class="title">
+						<span>What we do</span>
+					</h2>
+					<article class="activity">
+						<img src="img/consulting.png">
+						<h3>Development &amp; Design Consulting</h3>
+						<p>We can handle the most challenging technical problems, and we've also got design, product and marketing chops.</p>
+						<a href="#">Learn about our process</a>
+					</article>
+					<article class="activity">
+						<img src="img/engagement.png">
+						<h3>Training &amp; Speaking Engagements</h3>
+						<p>We offer private and group training classes for Ruby on Rails, HTML, CSS and JavaScript. Puppet show is optional</p>
+						<a href="#">View our upcoming schedule</a>
+					</article>
+					<article class="activity">
+						<img src="img/development.png">
+						<h3>Open Source<br>Development</h3>
+						<p>We’ve made contributions to some of the most notable open-source frameworks and development tools in the industry.</p>
+						<a href="#">See what we've done</a>
+					</article>
+
+			</div>
+		</div>
+	</section>
+	
+
+	<div id="ieError" style="display:none;">
+        <h1>Your browser is outdated</h1>
+        <h2>Please update your browser</h2>
+
+        <div><a href="https://www.google.com/intl/en/chrome/browser/"><img src="img/chrome.jpg"></a></div>
+        <div><a href="http://www.mozilla.org/en-US/firefox/new/"><img src="img/firefox.jpg"></a></div>
+        <div><a href="http://support.apple.com/kb/dl1531"><img src="img/safari.jpg"></a></div>
+        <div><a href="http://www.opera.com/computer"><img src="img/opera.jpg"></a></div>
+       
+    </div>
+
+
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/Placeholders.min.js"></script>
+    <script type="text/javascript" src="sass/ieDetect.js"></script>
+	<script type="text/javascript" src='js/app.js'></script>
+   	
+   	</body>
 </html>
